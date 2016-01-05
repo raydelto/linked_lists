@@ -13,8 +13,10 @@ private:
 	Node* _first;
 	Node* _last;
 public:
-	void add(Node* node);
 	List();
+	void add(const std::string&);
+	void printList();
+	void deleteNode(const std::string&);
 	virtual ~List();
 	Node* getFirst();
 };

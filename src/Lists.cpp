@@ -11,19 +11,30 @@
 using namespace std;
 
 int main() {
-	Node* mitch = new Node("Mitch");
-	Node* dustin = new Node("Dustin");
-	Node* ray = new Node("Ray");
-	List* list = new List();
-	list->add(mitch);
-	list->add(dustin);
-	list->add(ray);
-	Node* i = list->getFirst();
-	while(i != NULL)
-	{
-		cout << i -> getName() << endl;
-		i = i ->getNext();
-	}
+
+	List* items = new List();
+
+	string name;
+
+	 while(true) {
+		 cout << "Enter items or q to quit." << endl;
+		 cin >> name;
+		 if(name == "q")
+			 break;
+		 items -> add(name);
+
+	 }
+
+	 items ->printList();
+
+	 while(true) {
+	 		 cout << "Enter the name of item to delete or q to quit." << endl;
+	 		 cin >> name;
+	 		 if(name == "q")
+	 			 break;
+	 		 items -> deleteNode(name);
+	 		 items ->printList();
+	 	 }
 
 	return 0;
 }

@@ -6,15 +6,18 @@
  */
 
 #include "Node.h"
+using namespace std;
 
 Node::Node(string name): _name(name) , _next(NULL){
 
 }
 
-
+ostream& operator<<(ostream& os, const Node& n) {
+	return os << "Item: " << n._name;
+}
 
 Node::~Node() {
-	// TODO Auto-generated destructor stub
+
 }
 
 Node *Node::getNext()

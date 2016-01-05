@@ -9,16 +9,19 @@
 #define NODE_H_
 
 #include <string>
-using namespace std;
+#include <iostream>
 
 class Node {
+
+	friend std::ostream& operator<<(std::ostream& os, const Node& n);
+
 private:
-	string _name;
+	std::string _name;
 	Node* _next;
 public:
-	Node(string name);
+	Node(std::string name = "none");
 	virtual ~Node();
-	string getName();
+	std::string getName();
     Node *getNext();
 	friend class List;
 };
