@@ -2,32 +2,24 @@
  * Node.cpp
  *
  *  Created on: Jan 5, 2016
- *      Author: raydelto
+ *      Author: bnicholas
  */
 
 #include "Node.h"
-using namespace std;
 
-Node::Node(string name): _name(name) , _next(NULL){
+Node::Node(string name): _name(name), _next(NULL) {
 
-}
 
-ostream& operator<<(ostream& os, const Node& n) {
-	return os << "Item: " << n._name;
 }
 
 Node::~Node() {
-
+	// TODO Auto-generated destructor stub
 }
 
-Node *Node::getNext()
-{
-    return _next;
+Node *Node::getNext() {
+	return _next;
 }
 
-string Node::getName()
-{
+string Node::getName() {
 	return _name;
 }
-
-

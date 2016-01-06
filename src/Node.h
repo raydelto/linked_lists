@@ -2,27 +2,25 @@
  * Node.h
  *
  *  Created on: Jan 5, 2016
- *      Author: raydelto
+ *      Author: bnicholas
  */
 
 #ifndef NODE_H_
 #define NODE_H_
 
 #include <string>
-#include <iostream>
+using namespace std;
 
 class Node {
-
-	friend std::ostream& operator<<(std::ostream& os, const Node& n);
-
 private:
-	std::string _name;
+	string _name;
 	Node* _next;
 public:
-	Node(std::string name = "none");
+	Node(string name);
 	virtual ~Node();
-	std::string getName();
-    Node *getNext();
+	string getName();
+	Node* getNext();
+
 	friend class List;
 };
 
