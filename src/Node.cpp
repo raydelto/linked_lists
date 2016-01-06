@@ -26,5 +26,3 @@ string Node::getName()
 {
 	return _name;
 }
-
-

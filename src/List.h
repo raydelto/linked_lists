@@ -14,6 +14,7 @@ private:
 	Node* _last;
 public:
 	void add(Node* node);
+	void remove(Node* node);
 	List();
 	virtual ~List();
 	Node* getFirst();
