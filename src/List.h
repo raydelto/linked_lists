@@ -2,7 +2,7 @@
  * List.h
  *
  *  Created on: Jan 5, 2016
- *      Author: raydelto
+ *      Author: kristianharn
  */
 
 #ifndef LIST_H_

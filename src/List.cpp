@@ -2,7 +2,7 @@
  * List.cpp
  *
  *  Created on: Jan 5, 2016
- *      Author: raydelto
+ *      Author: kristianharn
  */
 
 #include "List.h"
@@ -35,5 +35,3 @@ Node *List::getFirst()
 {
 	return _first;
 }
-
-

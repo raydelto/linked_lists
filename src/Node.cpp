@@ -2,7 +2,7 @@
  * Node.cpp
  *
  *  Created on: Jan 5, 2016
- *      Author: raydelto
+ *      Author: kristianharn
  */
 
 #include "Node.h"
@@ -26,5 +26,3 @@ string Node::getName()
 {
 	return _name;
 }
-
-
