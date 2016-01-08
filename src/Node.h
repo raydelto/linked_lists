@@ -2,7 +2,7 @@
  * Node.h
  *
  *  Created on: Jan 5, 2016
- *      Author: raydelto
+ *      Author: bnicholas
  */
 
 #ifndef NODE_H_
@@ -19,7 +19,8 @@ public:
 	Node(string name);
 	virtual ~Node();
 	string getName();
-    Node *getNext();
+	Node* getNext();
+
 	friend class List;
 };
 
